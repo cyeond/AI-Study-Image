@@ -11,11 +11,14 @@
     </p>
    - Reverse Diffusion(역방향 확산)
      - Diffusion Model에서의 이미지 생성 방식
+       - 이미지에 포함된 노이즈를 예측하여 예측한만큼의 노이즈를 이미지에서 제거
+       - 위 과정을 반복하여 이미지 생성
       <p align="leading">
          <img width="50%" src="https://github.com/cyeond/AI-Study-Image/assets/139483587/d108e16e-0e36-488b-81e2-d3ddf5037a25">
       </p>
    - Noise predictor(잡음 예측기)
      - U-Net: 사전 학습된 신경망 모델
+       - 학습 방식: 노이즈가 포함된 이미지에서 U-Net 모델이 노이즈를 예측하고, 모델이 예측한 노이즈와 실제 노이즈를 비교하여 그 결과를 바탕으로 학습
       <p align="leading">
          <img width="50%" src="https://github.com/cyeond/AI-Study-Image/assets/139483587/6c868617-e017-41c8-b0b2-870d4098db38">
       </p>
@@ -35,7 +38,7 @@
 - CLIP Model
   - Contrastive Language-Image Pre-training model
   - OpenAI에서 개발
-  - ViT(Vision Transformer)와 Transformer 언어 모델(Transformer-based language model)을 결합하여 이미지와 텍스트를 모두 처리할 수 있게 만들어놓은 모델\
+  - ViT(Vision Transformer)와 Transformer 언어 모델(Transformer-based language model)을 결합하여 이미지와 텍스트를 모두 처리할 수 있게 만들어놓은 모델
   - 사용자가 입력한 프롬프트를 UNet이 이해하고 처리할 수 있는 형식으로 인코딩
     <p align="leading">
        <img width="50%" src="https://github.com/cyeond/AI-Study-Image/assets/139483587/d8d870b7-77e8-4eec-b6f3-8c308a6ab23f">
